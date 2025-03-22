@@ -1,13 +1,13 @@
 
-import AboutUs from "../components/aboutUs"
-import EventDetails from "../components/eventDetails"
-import Footer from "../components/footer"
-import Hero from "../components/hero"
-import Navbar from "../components/navbar"
-import Prices from "../components/prices"
-import Schedule from "../components/schedule"
-import Team from "../components/team"
-import Tracks from "../components/tracks"
+import AboutUs from "../components/AboutUs"
+import EventDetails from "../components/EventDetails"
+import Footer from "../components/Footer"
+import Hero from "../components/Hero"
+import Navbar from "../components/Navbar"
+import Prices from "../components/Prices"
+import Schedule from "../components/Schedule"
+import Team from "../components/Team"
+import Tracks from "../components/Tracks"
 
 
 function App() {
