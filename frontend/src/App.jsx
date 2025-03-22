@@ -4,7 +4,7 @@ import EventDetails from "../components/EventDetails"
 import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
-import Prices from "../components/Prices"
+import Prizes from "../components/Prizes"
 import Schedule from "../components/Schedule"
 import Team from "../components/Team"
 import Tracks from "../components/Tracks"
@@ -20,7 +20,7 @@ function App() {
         <AboutUs />
         <Tracks />
         <Schedule />
-        <Prices />
+        <Prizes />
         <EventDetails />
         <Team />
         <Footer />
