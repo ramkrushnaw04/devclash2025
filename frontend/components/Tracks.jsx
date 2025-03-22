@@ -21,13 +21,12 @@ const Tracks = () => {
     ];
 
     return (
-        <div className="w-full bg-black flex items-center flex-col justify-center gap-16 py-16" >
+        <section className="w-full bg-black flex items-center flex-col justify-center gap-16 py-16 overflow-hidden" >
             {/* Main Title */}
             <div className="text-center">
                 <h1 className="text-7xl font-bold text-orange-400" style={{ fontFamily: 'Samarkan' }}>TRACKS</h1>
             </div>
 
-            {/* Horizontal Scrolling Container */}
             <div className="max-w-full mx-auto pb-5 px-6">
                 <div className="flex gap-9 justify-center flow-row px-2 w-full flex-wrap">
                     {trackData.map((track, index) => (
@@ -47,7 +46,7 @@ const Tracks = () => {
             </div>
 
 
-        </div>
+        </section>
     );
 };
 
