@@ -36,7 +36,7 @@ const Timer = () => {
   }, [targetDate]);
 
   return (
-    <div className="w-3/5 flex flex-wrap justify-evenly">
+    <div className="w-[500px] flex flex-wrap justify-evenly">
       <div className="flex flex-col items-center">
         <h1 className="text-orange-500 text-[70px]">
           {timeLeft.days.toString().padStart(2, "0")}

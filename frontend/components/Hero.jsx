@@ -1,12 +1,12 @@
 import React from "react";
-import bg from "../src/icons/devkraft.png";
+import bg from "../src/assets/DevClash.logo_1.jpg";
 import Timer from "./Timer";
 
 const Hero = () => {
   return (
     <div className="bg-black flex flex-col items-center h-[400px] w-full">
-      <img src={bg} alt="" className="h-[80px] w-[80px]" />
-      <p className="text-white text-[18px]">Pune's Biggest Tech Clash</p>
+      <img src={bg} alt="" className="h-[100px] w-[400px]" />
+      <p className="text-white text-[15px]">Pune's Biggest Tech Clash</p>
       <Timer />
       <br />
       <h1 className="text-white">Countdown Begins</h1>
