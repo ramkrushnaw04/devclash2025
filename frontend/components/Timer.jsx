@@ -36,30 +36,84 @@ const Timer = () => {
   }, [targetDate]);
 
   return (
-    <div className="w-[500px] flex flex-wrap justify-evenly">
+    <div className="w-full sm:w-[700px] flex justify-center items-center gap-2 sm:gap-4">
+      {/* Days */}
       <div className="flex flex-col items-center">
-        <h1 className="text-orange-500 text-[70px]">
-          {timeLeft.days.toString().padStart(2, "0")}
-        </h1>
-        <p className="text-white">DAYS</p>
+        <div className="flex items-center">
+          <h1
+            className="text-orange-500 text-[60px] sm:text-[80px] font-bold"
+            style={{ WebkitTextStroke: "1px white" }}
+          >
+            {timeLeft.days.toString().padStart(2, "0")}
+          </h1>
+          <span className="text-orange-500 text-[60px] sm:text-[80px] font-bold ml-2">
+            :
+          </span>
+        </div>
+        <p
+          className="text-white text-[12px] sm:text-[16px]"
+          style={{ fontFamily: "Samarkan" }}
+        >
+          DAYS
+        </p>
       </div>
+
+      {/* Hours */}
       <div className="flex flex-col items-center">
-        <h1 className="text-orange-500 text-[70px]">
-          {timeLeft.hours.toString().padStart(2, "0")}
-        </h1>
-        <p className="text-white">HOURS</p>
+        <div className="flex items-center">
+          <h1
+            className="text-orange-500 text-[60px] sm:text-[80px] font-bold"
+            style={{ WebkitTextStroke: "1px white" }}
+          >
+            {timeLeft.hours.toString().padStart(2, "0")}
+          </h1>
+          <span className="text-orange-500 text-[60px] sm:text-[80px] font-bold ml-2">
+            :
+          </span>
+        </div>
+        <p
+          className="text-white text-[12px] sm:text-[16px]"
+          style={{ fontFamily: "Samarkan" }}
+        >
+          HOURS
+        </p>
       </div>
+
+      {/* Minutes */}
       <div className="flex flex-col items-center">
-        <h1 className="text-orange-500 text-[70px]">
-          {timeLeft.minutes.toString().padStart(2, "0")}
-        </h1>
-        <p className="text-white">MINUTES</p>
+        <div className="flex items-center">
+          <h1
+            className="text-orange-500 text-[60px] sm:text-[80px] font-bold"
+            style={{ WebkitTextStroke: "1px white" }}
+          >
+            {timeLeft.minutes.toString().padStart(2, "0")}
+          </h1>
+          <span className="text-orange-500 text-[60px] sm:text-[80px] font-bold ml-2">
+            :
+          </span>
+        </div>
+        <p
+          className="text-white text-[12px] sm:text-[16px]"
+          style={{ fontFamily: "Samarkan" }}
+        >
+          MINUTES
+        </p>
       </div>
+
+      {/* Seconds */}
       <div className="flex flex-col items-center">
-        <h1 className="text-orange-500 text-[70px]">
+        <h1
+          className="text-orange-500 text-[60px] sm:text-[80px] font-bold"
+          style={{ WebkitTextStroke: "1px white" }}
+        >
           {timeLeft.seconds.toString().padStart(2, "0")}
         </h1>
-        <p className="text-white">SECONDS</p>
+        <p
+          className="text-white text-[12px] sm:text-[16px]"
+          style={{ fontFamily: "Samarkan" }}
+        >
+          SECONDS
+        </p>
       </div>
     </div>
   );
