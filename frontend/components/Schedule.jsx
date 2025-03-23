@@ -6,9 +6,9 @@ const Card = ({ title, date, info }) => {
     return (
         <div className='w-72'>
             <div className="flex items-center justify-center  w-64 m-auto">
-                <div className="bg-stone-800 text-white rounded-xl border-2 border-amber-700 p-4 text-center shadow-lg">
+                <div className="bg-[#372511] text-white rounded-xl border-2 border-amber-700 p-4 text-center shadow-lg">
                     <h2 className="text-xl font-bold mb-2">{title}</h2>
-                    <h3 className="text-2xl font-bold text-orange-400 mb-6">{date}</h3>
+                    <h3 className="text-2xl font-bold text-[#F16043] mb-6">{date}</h3>
                     <p className="text-sm h-[140px]"> {info} </p>
                 </div>
             </div>
@@ -29,8 +29,8 @@ const Lines = ({ color }) => {
             <div className={`VERTICAL absolute  h-[130px] w-[6px] `} style={{ backgroundColor: color }}></div>
             <div className={`HORIZONTAL absolute h-[6px] w-[110px] left-[20px] bottom-0 `} style={{ backgroundColor: color }}></div>
 
-            <div class={`LEFT-CURVE absolute bottom-[-21px] left-[-21px] w-[42px] h-[42px] border-[6px] border-b-transparent border-l-transparent border-t-transparent rotate-[-45deg] rounded-full ${ color == '#fff' ? 'border-white' : 'border-orange-400'} `} ></div>
-            <div class={`RIGHT-CURVE absolute bottom-[-21px] right-[-21px] w-[42px] h-[42px] border-[6px] border-b-transparent border-r-transparent border-t-transparent rotate-[45deg] rounded-full ${ color == '#fff' ? 'border-white' : 'border-orange-400'} `} ></div>
+            <div class={`LEFT-CURVE absolute bottom-[-21px] left-[-21px] w-[42px] h-[42px] border-[6px] border-b-transparent border-l-transparent border-t-transparent rotate-[-45deg] rounded-full ${ color == '#fff' ? 'border-white' : 'border-[#F16043]'} `} ></div>
+            <div class={`RIGHT-CURVE absolute bottom-[-21px] right-[-21px] w-[42px] h-[42px] border-[6px] border-b-transparent border-r-transparent border-t-transparent rotate-[45deg] rounded-full ${ color == '#fff' ? 'border-white' : 'border-[#F16043]'} `} ></div>
 
             <div className='TOP-BLOB absolute h-[18px] w-[18px] top-[-1px] left-[-6px]  rounded-full' style={{ backgroundColor: color }}> </div>
             <div className='BOTTOM-BLOB absolute h-[18px] w-[18px] bottom-[-9px] left-[-9px]  rounded-full' style={{ backgroundColor: color }}> </div>
@@ -50,7 +50,7 @@ const Schedule = () => {
             {/* <img className='w-full h-full absolute top-0 left-0 z-0 opacity-50' src="imagelink" alt="" /> */}
 
             <div className="text-center absolute top-[80px]">
-                <h1 className="text-7xl font-bold text-orange-400" style={{ fontFamily: 'Samarkan' }}>SCHEDULE</h1>
+                <h1 className="text-7xl font-bold text-[#F16043]" style={{ fontFamily: 'Samarkan' }}>SCHEDULE</h1>
             </div>
 
             <div className='flex flex-col gap-[178px] scale-[85%] '>
@@ -96,7 +96,7 @@ const Schedule = () => {
                 <div className='bottom-cards w-[1164px]  h-[270px] flex items-center justify-center gap-[12px] '>
                     <div className='relative '>
                         <div className='absolute left-36 top-[-9rem] rotate-180 scale-x-[-1]'>
-                            <Lines color={'#ff8904'} />
+                            <Lines color={'#F16043'} />
                         </div>
                         <Card
                             title={'Last date to register'}
@@ -107,7 +107,7 @@ const Schedule = () => {
 
                     <div className='relative '>
                         <div className='absolute left-36 top-[-9rem] rotate-180 scale-x-[-1]'>
-                            <Lines color={'#ff8904'} />
+                            <Lines color={'#F16043'} />
                         </div>
                         <Card
                             title={'Hackathon Concludes'}

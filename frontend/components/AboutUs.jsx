@@ -3,8 +3,8 @@ import React from 'react';
 const AboutUsCard = () => {
   return (
     <div className="flex bg-black items-center justify-center p-4 py-16">
-      <div className="bg-stone flex flex-col  gap-16 text-white rounded-2xl border-3 border-[rgb(165,129,74)] bg-[rgb(56,37,17,0.5)] p-8 max-w-4xl text-center ">
-        <h2 className="text-7xl font-bold text-orange-400" style={{ fontFamily: 'Samarkan' }}>ABOUT US</h2>
+      <div className="bg-stone flex flex-col  gap-16 text-white rounded-2xl border-3 border-[rgb(165,129,74)] bg-[#372511] p-8 max-w-4xl text-center ">
+        <h2 className="text-7xl font-bold text-[#F16043]" style={{ fontFamily: 'Samarkan' }}>ABOUT US</h2>
         
         <p className="text-lg">
           DevKraft is a student-founded club on a mission to transform the engineering experience. We're
