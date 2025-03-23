@@ -10,12 +10,20 @@ import devclashlogo from "/logos/devkraft1.png"
 
 const Footer = () => {
     return (
+<<<<<<< HEAD
         <div className="w-full bg-black flex flex-col items-center pt-12 px-4 sm:pt-16 md:pt-8">
+=======
+        <div id='contact' className="w-full bg-black flex flex-col items-center pt-28 px-4 sm:pt-16 md:pt-8">
+>>>>>>> c174991 (some changes)
             {/* Logo Section */}
             <div className='w-3/4 sm:w-2/4 md:w-1/3 lg:w-1/4 max-w-[300px] mb-8'>
                 <img src={devclashlogo} className='h-full w-full object-contain' alt="DevKraft Logo"/>
             </div>
+<<<<<<< HEAD
 
+=======
+``
+>>>>>>> c174991 (some changes)
             {/* Contact Section */}
             <div className='flex flex-col gap-4 w-full max-w-lg'>
                 <h1 className="text-[#F16043] text-2xl sm:text-3xl md:text-4xl font-bold text-center">

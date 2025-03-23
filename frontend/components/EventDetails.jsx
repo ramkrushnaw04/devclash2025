@@ -13,8 +13,13 @@ const Card = ({ title, children }) => {
 
 const EventDetails = () => {
   return (
+<<<<<<< HEAD
     <div className="w-full bg-black flex flex-col items-center py-80 px-4 sm:px-0">
       <h1 className="text-[#F16043] text-4xl sm:text-6xl font-bold text-center" style={{ fontFamily: 'Samarkan' }}>
+=======
+    <div className="w-full bg-black flex flex-col items-center py-20 px-4 sm:px-0">
+      <h1 className="text-[#F16043] text-4xl sm:text-6xl font-bold text-center mb-8" style={{ fontFamily: 'Samarkan' }}>
+>>>>>>> c174991 (some changes)
         EVENT DETAILS
       </h1>
 

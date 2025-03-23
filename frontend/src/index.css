@@ -4,3 +4,12 @@
     font-family: 'Samarkan';
     src: url('/fonts/samarkan.TTF') format('truetype');
   }
+
+  @font-face {
+    font-family: 'Kruti';
+    src: url('/fonts/kruti.ttf') format('truetype');
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }

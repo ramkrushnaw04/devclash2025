@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Ring from "./Ring";
 
 const Timer = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -36,17 +37,19 @@ const Timer = () => {
   }, [targetDate]);
 
   return (
-    <div className="w-full sm:w-[700px] flex justify-center items-center gap-2 sm:gap-4">
+    <div className="w-full sm:w-[700px] flex justify-center items-center gap-2 sm:gap-4" >
+        {/* <Ring /> */}
       {/* Days */}
       <div className="flex flex-col items-center">
         <div className="flex items-center">
           <h1
-            className="text-orange-500 text-[60px] sm:text-[80px] font-bold"
-            style={{ WebkitTextStroke: "1px white" }}
+            className="text-orange-500 text-[60px] sm:text-[120px] font-bold"
+            // style={{ WebkitTextStroke: "1px white" }}
+            style={{ fontFamily: "Kruti" }}
           >
             {timeLeft.days.toString().padStart(2, "0")}
           </h1>
-          <span className="text-orange-500 text-[60px] sm:text-[80px] font-bold ml-2">
+          <span className="text-white text-[60px] sm:text-[80px] font-bold ml-2" style={{ fontFamily: "Samarkan" }}>
             :
           </span>
         </div>
@@ -62,12 +65,13 @@ const Timer = () => {
       <div className="flex flex-col items-center">
         <div className="flex items-center">
           <h1
-            className="text-orange-500 text-[60px] sm:text-[80px] font-bold"
-            style={{ WebkitTextStroke: "1px white" }}
+            className="text-orange-500 text-[60px] sm:text-[120px] font-bold"
+            // style={{ WebkitTextStroke: "1px white" }}
+            style={{ fontFamily: "Kruti" }}
           >
             {timeLeft.hours.toString().padStart(2, "0")}
           </h1>
-          <span className="text-orange-500 text-[60px] sm:text-[80px] font-bold ml-2">
+          <span className="text-white text-[60px] sm:text-[80px] font-bold ml-2" style={{ fontFamily: "Samarkan" }}>
             :
           </span>
         </div>
@@ -83,12 +87,13 @@ const Timer = () => {
       <div className="flex flex-col items-center">
         <div className="flex items-center">
           <h1
-            className="text-orange-500 text-[60px] sm:text-[80px] font-bold"
-            style={{ WebkitTextStroke: "1px white" }}
+            className="text-orange-500 text-[60px] sm:text-[120px] font-bold"
+            // style={{ WebkitTextStroke: "1px white" }}
+            style={{ fontFamily: "Kruti" }}
           >
             {timeLeft.minutes.toString().padStart(2, "0")}
           </h1>
-          <span className="text-orange-500 text-[60px] sm:text-[80px] font-bold ml-2">
+          <span className="text-white text-[60px] sm:text-[80px] font-bold ml-2" style={{ fontFamily: "Samarkan" }}>
             :
           </span>
         </div>
@@ -103,8 +108,9 @@ const Timer = () => {
       {/* Seconds */}
       <div className="flex flex-col items-center">
         <h1
-          className="text-orange-500 text-[60px] sm:text-[80px] font-bold"
-          style={{ WebkitTextStroke: "1px white" }}
+          className="text-orange-500 text-[60px] sm:text-[120px] font-bold"
+        //   style={{ WebkitTextStroke: "1px white" }}
+        style={{ fontFamily: "Kruti" }}
         >
           {timeLeft.seconds.toString().padStart(2, "0")}
         </h1>

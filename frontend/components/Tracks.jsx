@@ -21,7 +21,7 @@ const Tracks = () => {
     ];
 
     return (
-        <section className="w-full bg-black flex items-center flex-col justify-center gap-16 py-16 overflow-hidden" >
+        <section id='domain' className="w-full bg-black flex items-center flex-col justify-center gap-16 py-40 overflow-hidden" >
             {/* Main Title */}
             <div className="text-center">
                 <h1 className="text-7xl font-bold text-[#F16043]" style={{ fontFamily: 'Samarkan' }}>TRACKS</h1>
