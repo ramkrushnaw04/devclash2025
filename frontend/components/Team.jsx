@@ -39,9 +39,9 @@ const Team = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-black flex flex-col items-center">
+    <div className="w-full py-20 bg-black flex flex-col items-center">
       <h1
-        className="text-orange-400 font-bold text-[40px] sm:text-[50px] md:text-[60px] lg:text-[72px] mt-8 mb-6"
+        className="text-[#F16043] font-bold text-[40px] sm:text-[50px] md:text-[60px] lg:text-[72px] mt-8 mb-6"
         style={{ fontFamily: "Samarkan" }}
       >
         EVENT TEAM
@@ -62,7 +62,7 @@ const Team = () => {
               <h2 className="text-white text-[16px] md:text-[18px] lg:text-[20px]">
                 {profile.Name}
               </h2>
-              <h2 className="font-bold text-orange-400 text-[14px] md:text-[16px]">
+              <h2 className="font-bold text-[#F16043] text-[14px] md:text-[16px]">
                 {profile.Post}
               </h2>
             </div>
@@ -71,21 +71,21 @@ const Team = () => {
               <a href={profile.Whatsapp} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={faSquareWhatsapp}
-                  className="text-orange-400 hover:text-green-400"
+                  className="text-[#F16043] hover:text-green-400"
                   style={{ height: "30px" }}
                 />
               </a>
               <a href={profile.Instagram} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={faSquareInstagram}
-                  className="text-orange-400 hover:text-pink-500"
+                  className="text-[#F16043] hover:text-pink-500"
                   style={{ height: "30px" }}
                 />
               </a>
               <a href={profile.LinkedIn} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon
                   icon={faLinkedin}
-                  className="text-orange-400 hover:text-blue-500"
+                  className="text-[#F16043] hover:text-blue-500"
                   style={{ height: "30px" }}
                 />
               </a>

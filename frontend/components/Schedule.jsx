@@ -46,7 +46,7 @@ const Lines = ({ color }) => {
 
 const Schedule = () => {
     return (
-        <section className="w-full relative bg-black flex items-center flex-col justify-center py-8" >
+        <section id='schedule' className="w-full max-w-screen relative bg-black flex items-center flex-col justify-center py-8" >
             {/* <img className='w-full h-full absolute top-0 left-0 z-0 opacity-50' src="imagelink" alt="" /> */}
 
             <div className="text-center absolute top-[80px]">
