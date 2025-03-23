@@ -24,7 +24,7 @@ const Tracks = () => {
         <section className="w-full bg-black flex items-center flex-col justify-center gap-16 py-16 overflow-hidden" >
             {/* Main Title */}
             <div className="text-center">
-                <h1 className="text-7xl font-bold text-orange-400" style={{ fontFamily: 'Samarkan' }}>TRACKS</h1>
+                <h1 className="text-7xl font-bold text-[#F16043]" style={{ fontFamily: 'Samarkan' }}>TRACKS</h1>
             </div>
 
             <div className="max-w-full mx-auto pb-5 px-6">
@@ -32,9 +32,9 @@ const Tracks = () => {
                     {trackData.map((track, index) => (
                         <div
                             key={index}
-                            className="rounded-3xl border-3 border-[rgb(165,129,74)] bg-opacity-20 bg-[rgb(56,37,17,0.5)] p-6 w-72 flex-shrink-0"
+                            className="rounded-3xl border-3 border-[rgb(165,129,74)] bg-opacity-20 bg-[#372511] p-6 w-72 flex-shrink-0"
                         >
-                            <h2 className="text-xl md:text-2xl font-bold text-center text-orange-400 mb-4 font-samarkan">
+                            <h2 className="text-xl md:text-2xl font-bold text-center text-[#F16043] mb-4 font-samarkan">
                                 {track.title}
                             </h2>
                             <p className="text-gray-100 text-center text-sm md:text-base">
