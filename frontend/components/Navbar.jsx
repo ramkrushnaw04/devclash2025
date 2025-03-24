@@ -95,22 +95,49 @@ const DevKraftNav = () => {
 
             {/* Mobile Navigation - Dropdown from top */}
             {isMobile && <motion.div
-                className="w-full bg-stone-900 absolute left-0 right-0 mt-4 overflow-hidden z-40"
-                initial="closed"
-                animate={isOpen ? "open" : "closed"}
-                variants={menuVariants}
-            >
-                <div className="flex flex-col items-center py-4">
-                    {/* <motion.a variants={itemVariants} href="#" className="text-orange-600 hover:text-white py-3 transition-colors text-xl">Home</motion.a> */}
-                    <motion.a variants={itemVariants} href="#about" className="text-orange-600 hover:text-white py-3 transition-colors text-xl">About</motion.a>
-                    <motion.a variants={itemVariants} href="#domain" className="text-orange-600 hover:text-white py-3 transition-colors text-xl">Domain</motion.a>
-                    <motion.a variants={itemVariants} href="#schedule" className="text-orange-600 hover:text-white py-3 transition-colors text-xl">Schedule</motion.a>
-                    <motion.a variants={itemVariants} href="#prizes" className="text-orange-600 hover:text-white py-3 transition-colors text-xl">Prizes</motion.a>
-                    {/* <motion.a variants={itemVariants} href="#" className="text-orange-600 hover:text-white py-3 transition-colors text-xl">Team</motion.a> */}
-                    {/* <motion.a variants={itemVariants} href="#" className="text-orange-600 hover:text-white py-3 transition-colors text-xl">FAQ</motion.a> */}
-                    <motion.a variants={itemVariants} href="#contact" className="text-orange-600 hover:text-white py-3 transition-colors text-xl">Contact</motion.a>
-                </div>
-            </motion.div>}
+    className="w-full bg-black/90 absolute left-0 right-0 mt-4 overflow-hidden z-40 border-t-2 border-b-2 border-orange-500"
+    initial="closed"
+    animate={isOpen ? "open" : "closed"}
+    variants={menuVariants}
+>
+    <div className="flex flex-col items-center py-6">
+        <motion.a 
+            variants={itemVariants} 
+            href="#about" 
+            className="text-orange-500 hover:text-white py-4 transition-colors text-2xl font-bold tracking-wider uppercase"
+        >
+            About
+        </motion.a>
+        <motion.a 
+            variants={itemVariants} 
+            href="#domain" 
+            className="text-orange-500 hover:text-white py-4 transition-colors text-2xl font-bold tracking-wider uppercase"
+        >
+            Domain
+        </motion.a>
+        <motion.a 
+            variants={itemVariants} 
+            href="#schedule" 
+            className="text-orange-500 hover:text-white py-4 transition-colors text-2xl font-bold tracking-wider uppercase"
+        >
+            Schedule
+        </motion.a>
+        <motion.a 
+            variants={itemVariants} 
+            href="#prizes" 
+            className="text-orange-500 hover:text-white py-4 transition-colors text-2xl font-bold tracking-wider uppercase"
+        >
+            Prizes
+        </motion.a>
+        <motion.a 
+            variants={itemVariants} 
+            href="#contact" 
+            className="text-orange-500 hover:text-white py-4 transition-colors text-2xl font-bold tracking-wider uppercase"
+        >
+            Contact
+        </motion.a>
+    </div>
+</motion.div>}
         </div>
     );
 };

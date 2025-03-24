@@ -39,7 +39,7 @@ const Team = () => {
   ];
 
   return (
-    <div className="w-full py-20 bg-black flex flex-col items-center">
+    <div className="w-full py-20 bg-black flex flex-col items-center px-10">
       <h1
         className="text-[#F16043] font-bold text-[40px] sm:text-[50px] md:text-[60px] lg:text-[72px] mt-8 mb-6"
         style={{ fontFamily: "Samarkan" }}
