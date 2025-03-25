@@ -28,21 +28,43 @@ const Card = ({ title, children }) => {
 
 const EventDetails = () => {
     return (
-        <div className="w-full bg-black flex flex-col items-center py-20 sm:py-80 px-4 sm:px-0">
+        <div className="w-full min-h-screen relative bg-black flex flex-col items-center py-20 sm:py-80 px-4 sm:px-0">
             {/* <h1 className="text-[#F16043] text-4xl sm:text-6xl font-bold text-center" style={{ fontFamily: 'Samarkan' }}>
         EVENT DETAILS
       </h1> */}
-            <ScrollFloat
-                animationDuration={1}
-                ease='back.inOut(2)'
-                scrollStart='center bottom+=10%'
-                scrollEnd='bottom bottom-=50%'
-                stagger={0.03}
-            >
-                EVENT DETAILS
-            </ScrollFloat>
 
-            <div className="flex flex-col sm:flex-row flex-wrap gap-6 sm:gap-12 justify-center items-center mt-12 w-full px-4 sm:px-20">
+        <img className='w-full h-full absolute top-0 left-0  object-cover brightness-[10%]' src="/images/event-details-background.webp" alt="" />
+        <div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black to-transparent"></div>
+        <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent"></div>
+
+
+            <div className='flex flex-col sm:flex-row items-center justify-center sm:gap-7'>
+
+                <ScrollFloat
+                    animationDuration={1}
+                    ease='back.inOut(2)'
+                    scrollStart='center bottom+=10%'
+                    scrollEnd='bottom bottom-=50%'
+                    stagger={0.03}
+                >
+                    EVENT
+                </ScrollFloat>
+
+                <div className='mt-[-70px] sm:mt-0' >
+                    <ScrollFloat
+                        animationDuration={1}
+                        ease='back.inOut(2)'
+                        scrollStart='center bottom+=10%'
+                        scrollEnd='bottom bottom-=50%'
+                        stagger={0.03}
+                    >
+                        DETAILS
+                    </ScrollFloat>
+
+                </div>
+            </div>
+
+            <div className="flex flex-col z-10 sm:flex-row flex-wrap gap-6 sm:gap-12 justify-center items-center mt-12 w-full px-4 sm:px-20">
 
                 {/* ABOUT EVENT */}
                 <Card title="ABOUT EVENT">

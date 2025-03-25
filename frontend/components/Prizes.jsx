@@ -46,10 +46,15 @@ const Card = ({ src, title }) => {
 
 const EventDetails = () => {
     return (
-        <div id='prizes' className="w-full  bg-black flex flex-col items-center py-20 px-4 sm:px-0">
+        <div id='prizes' className="w-full min-h-screen relative bg-black flex flex-col items-center py-20 px-4 sm:px-0">
             {/* <h1 className="text-[#F16043] text-4xl sm:text-7xl font-bold text-center mb-8" style={{ fontFamily: 'Samarkan' }}>
                 PRIZES
             </h1> */}
+
+            <img className='w-full h-full absolute top-0 left-0 z-[0] object-cover brightness-[10%]' src="/images/prizes-background.webp" alt="" />
+            <div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent"></div>
+
             <ScrollFloat
                     animationDuration={1}
                     ease='back.inOut(2)'
@@ -60,7 +65,7 @@ const EventDetails = () => {
                     PRIZES
                 </ScrollFloat>
 
-            <div className="flex flex-col flex-wrap sm:flex-row gap-4 sm:gap-12 justify-center items-center mt-12 w-full px-6">
+            <div className="flex flex-col flex-wrap  z-10 sm:flex-row gap-4 sm:gap-12 justify-center items-center mt-12 w-full px-6">
 
 
 

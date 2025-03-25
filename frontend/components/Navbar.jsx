@@ -61,7 +61,7 @@ const DevKraftNav = () => {
     };
 
     return (
-        <div className="w-full  text-black px-6 py-4 ">
+        <div className="w-full relative text-black px-6 py-4 z-10">
             <div className="flex items-center justify-between">
                 {/* Logo section */}
                 <div className="flex items-center">
