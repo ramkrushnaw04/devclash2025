@@ -8,13 +8,14 @@ import Prizes from "../components/Prizes"
 import Schedule from "../components/Schedule"
 import Team from "../components/Team"
 import Tracks from "../components/Tracks"
-
+import SplashCursor from "../components/SplashCursor"
 
 function App() {
 
 
   return (
-    <div className="text-black">
+    <div className=" ">
+        <SplashCursor  />
         <Navbar />
         <Hero />
         <AboutUs />
@@ -22,7 +23,7 @@ function App() {
         <Schedule />
         <Prizes />
         <EventDetails />
-        <Team />
+        {/* <Team />x */}
         <Footer />
     </div>
   )

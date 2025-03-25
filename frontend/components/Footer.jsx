@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
 
             {/* Copyright Footer */}
-            <div className='mt-12 sm:mt-16 md:mt-20 pb-6'>
+            <div className='mt-64 sm:mt-64  pb-6'>
                 <h3 className='text-sm  text-white text-center'>
                     Design and Developed by Team Devkraft ©
                 </h3>
