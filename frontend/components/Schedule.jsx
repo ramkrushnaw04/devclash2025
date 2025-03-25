@@ -101,9 +101,10 @@ const Schedule = () => {
 
 
     return (
-        <section id='schedule' className="w-full max-w-screen overflow-hidden relative bg-black flex items-center flex-col justify-center py-8" >
-            {/* <img className='w-full h-full absolute top-0 left-0 z-0 opacity-50' src="imagelink" alt="" /> */}
-
+        <section id='schedule' className="w-full min-h-screen max-w-screen overflow-hidden relative bg-black flex items-center flex-col justify-center py-8" >
+            <img className='w-full h-full absolute top-0 left-0 z-0 opacity-50 object-cover brightness-[20%]' src="/images/schedule-background.png" alt="" />
+            <div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent"></div>
 
             <div className="text-center absolute top-[80px] ">
                 {/* <h1 className="text-7xl font-bold text-[#F16043]" style={{ fontFamily: 'Samarkan' }}>SCHEDULE</h1> */}
@@ -147,7 +148,7 @@ const Schedule = () => {
                     <div className='relative '>
                         <Card
                             title={'Results Out'}
-                            date={'7 April'}
+                            date={'15 April'}
                             info={"The moment of truth! Winners will be announced. It’s important to note that this date is subject to change based on project complexity. Stay tuned for updates and mark your calendars!"}
                         />
                         <div className='absolute left-36'>

@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className=" ">
-        <SplashCursor  />
+        {/* <SplashCursor  /> */}
         <Navbar />
         <Hero />
         <AboutUs />

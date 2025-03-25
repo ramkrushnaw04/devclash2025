@@ -13,3 +13,12 @@
   html {
     scroll-behavior: smooth;
   }
+
+
+  body {
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+  }
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }

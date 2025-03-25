@@ -18,14 +18,15 @@ const TrackCard = ({ track }) => {
         whileTap={{ scale: 0.95 }}
       >
         <motion.img 
-          src={track.imageUrl || '/api/placeholder/300/300'} 
-          alt={track.title} 
-          className="w-full h-48 object-cover rounded-xl mb-4"
-          initial={{ opacity: 0.8 }}
-          whileHover={{ opacity: 1, scale: 1.02 }}
-          transition={{ duration: 0.3 }}
-        />
-        <h2 className="text-xl md:text-2xl font-bold text-center text-[#F16043] font-samarkan mb-2">
+                  src={track.imageUrl} 
+                  className='object-contain rounded-xl max-h-full max-w-full'
+                  whileHover={{ 
+                    scale: 1.1,
+                    rotate: 2,
+                    transition: { duration: 0.3 }
+                  }}
+                />
+        <h2 className="text-xl md:text-2xl font-bold text-center text-[#F16043] font-samarkan  my-4">
           {track.title}
         </h2>
         <p className="text-gray-100 text-center text-sm md:text-base">
@@ -65,7 +66,10 @@ const Tracks = () => {
     ];
 
     return (
-        <section id='domain' className="w-full bg-black flex items-center flex-col justify-center gap-16 py-20 sm:py-40 overflow-hidden" >
+        <section id='domain' className="w-full min-h-screen relative bg-black flex items-center flex-col justify-center gap-16 py-20 sm:py-40 overflow-hidden" >
+            <img className='w-full h-full absolute top-0 left-0  object-cover brightness-[10%]' src="/images/tracks-background.webp" alt="" />
+            <div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent"></div>
             {/* Main Title */}
             <div className="text-center">
                 {/* <h1 className="text-7xl font-bold text-[#F16043]" style={{ fontFamily: 'Samarkan' }}>TRACKS</h1> */}
@@ -80,7 +84,7 @@ const Tracks = () => {
                 </ScrollFloat>
             </div>
 
-            <div className="max-w-full mx-auto pb-5 px-6">
+            <div className="max-w-full mx-auto pb-5 z-10 px-6">
                 <div className="flex gap-9 justify-center flow-row px-2 w-full flex-wrap">
                     {trackData.map((track, index) => (
                         <TrackCard key={index} track={track} />

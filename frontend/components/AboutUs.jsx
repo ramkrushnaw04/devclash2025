@@ -3,8 +3,12 @@ import ScrollFloat from './ScrollFloat';
 
 const AboutUsCard = () => {
   return (
-    <div id='about' className="flex bg-black items-center justify-center p-4 pt-36 pb-8">
-      <div className="bg-stone flex flex-col  gap-16 text-white rounded-2xl border-3 border-[rgb(165,129,74)] bg-[#372511] p-8 max-w-4xl text-center ">
+    <div id='about' className="flex relative min-h-screen bg-black items-center justify-center p-4 pt-36 pb-8">
+        <img className='w-full h-full absolute top-0 left-0  object-cover brightness-[10%]' src="/images/about-us-background.webp" alt="" />
+        <div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black to-transparent"></div>
+        <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent"></div>
+
+      <div className="bg-stone z-10 flex flex-col  gap-16 text-white rounded-2xl border-3 border-[rgb(165,129,74)] bg-[#372511] p-8 max-w-4xl text-center ">
         {/* <h2 className="text-7xl font-bold text-[#F16043]" style={{ fontFamily: 'Samarkan' }}>ABOUT US</h2> */}
         <ScrollFloat
                     animationDuration={1}
