@@ -82,62 +82,59 @@ const DevKraftNav = () => {
 
                 {/* Desktop Navigation */}
                 {!isMobile && <nav className="flex h-[70px] items-center space-x-8 text-orange-600 text-xl">
-                    {/* <a href="#" className="hover:text-white transition-colors">Home</a> */}
                     <a href="#about" className="hover:text-white transition-colors">About</a>
                     <a href="#domain" className="hover:text-white transition-colors">Domain</a>
                     <a href="#schedule" className="hover:text-white transition-colors">Schedule</a>
                     <a href="#prizes" className="hover:text-white transition-colors">Prizes</a>
-                    {/* <a href="#" className="hover:text-white transition-colors">Team</a> */}
-                    {/* <a href="#" className="hover:text-white transition-colors">FAQ</a> */}
                     <a href="#contact" className="hover:text-white transition-colors">Contact</a>
                 </nav>}
             </div>
 
             {/* Mobile Navigation - Dropdown from top */}
             {isMobile && <motion.div
-    className="w-full bg-black/90 absolute left-0 right-0 mt-4 overflow-hidden z-40 border-t-2 border-b-2 border-orange-500"
-    initial="closed"
-    animate={isOpen ? "open" : "closed"}
-    variants={menuVariants}
->
-    <div className="flex flex-col items-center py-6">
-        <motion.a 
-            variants={itemVariants} 
-            href="#about" 
-            className="text-orange-500 hover:text-white py-4 transition-colors text-2xl font-bold tracking-wider uppercase"
-        >
-            About
-        </motion.a>
-        <motion.a 
-            variants={itemVariants} 
-            href="#domain" 
-            className="text-orange-500 hover:text-white py-4 transition-colors text-2xl font-bold tracking-wider uppercase"
-        >
-            Domain
-        </motion.a>
-        <motion.a 
-            variants={itemVariants} 
-            href="#schedule" 
-            className="text-orange-500 hover:text-white py-4 transition-colors text-2xl font-bold tracking-wider uppercase"
-        >
-            Schedule
-        </motion.a>
-        <motion.a 
-            variants={itemVariants} 
-            href="#prizes" 
-            className="text-orange-500 hover:text-white py-4 transition-colors text-2xl font-bold tracking-wider uppercase"
-        >
-            Prizes
-        </motion.a>
-        <motion.a 
-            variants={itemVariants} 
-            href="#contact" 
-            className="text-orange-500 hover:text-white py-4 transition-colors text-2xl font-bold tracking-wider uppercase"
-        >
-            Contact
-        </motion.a>
-    </div>
-</motion.div>}
+                className="w-full bg-black/90 absolute left-0 right-0 mt-4 overflow-hidden z-40 border-t-2 border-b-2 border-orange-500"
+                initial="closed"
+                animate={isOpen ? "open" : "closed"}
+                variants={menuVariants}
+            >
+                <div className="flex flex-col items-center py-6">
+                    <motion.a
+                        variants={itemVariants}
+                        href="#about"
+                        className="text-orange-500 hover:text-white py-4 transition-colors text-2xl font-bold tracking-wider uppercase"
+                    >
+                        About
+                    </motion.a>
+                    <motion.a
+                        variants={itemVariants}
+                        href="#domain"
+                        className="text-orange-500 hover:text-white py-4 transition-colors text-2xl font-bold tracking-wider uppercase"
+                    >
+                        Domain
+                    </motion.a>
+                    <motion.a
+                        variants={itemVariants}
+                        href="#schedule"
+                        className="text-orange-500 hover:text-white py-4 transition-colors text-2xl font-bold tracking-wider uppercase"
+                    >
+                        Schedule
+                    </motion.a>
+                    <motion.a
+                        variants={itemVariants}
+                        href="#prizes"
+                        className="text-orange-500 hover:text-white py-4 transition-colors text-2xl font-bold tracking-wider uppercase"
+                    >
+                        Prizes
+                    </motion.a>
+                    <motion.a
+                        variants={itemVariants}
+                        href="#contact"
+                        className="text-orange-500 hover:text-white py-4 transition-colors text-2xl font-bold tracking-wider uppercase"
+                    >
+                        Contact
+                    </motion.a>
+                </div>
+            </motion.div>}
         </div>
     );
 };

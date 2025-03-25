@@ -1,23 +1,31 @@
-
-import { div } from 'framer-motion/client';
 import React, { useState, useEffect } from 'react'
-
+import ScrollFloat from './ScrollFloat';
+import { motion } from 'framer-motion';
 
 const Card = ({ title, date, info }) => {
     return (
-        <div className='w-72'>
-            <div className="flex items-center justify-center  w-64 m-auto">
+        <motion.div 
+            className='w-72'
+            whileHover={{ 
+                scale: 1.05,
+                // boxShadow: '0 10px 20px rgba(241, 96, 67, 0.2)',
+                transition: { 
+                    duration: 0.3,
+                    ease: "easeInOut"
+                }
+            }}
+            whileTap={{ scale: 0.95 }}
+        >
+            <div className="flex items-center justify-center w-64 m-auto">
                 <div className="bg-[#372511] text-white rounded-xl border-2 border-amber-700 p-4 text-center shadow-lg">
                     <h2 className="text-xl font-bold mb-2">{title}</h2>
                     <h3 className="text-2xl font-bold text-[#F16043] mb-6">{date}</h3>
                     <p className="text-sm h-[140px]"> {info} </p>
                 </div>
             </div>
-
-        </div>
+        </motion.div>
     );
 };
-
 
 
 
@@ -97,11 +105,20 @@ const Schedule = () => {
             {/* <img className='w-full h-full absolute top-0 left-0 z-0 opacity-50' src="imagelink" alt="" /> */}
 
 
-            <div className="text-center absolute top-[80px]">
-                <h1 className="text-7xl font-bold text-[#F16043]" style={{ fontFamily: 'Samarkan' }}>SCHEDULE</h1>
+            <div className="text-center absolute top-[80px] ">
+                {/* <h1 className="text-7xl font-bold text-[#F16043]" style={{ fontFamily: 'Samarkan' }}>SCHEDULE</h1> */}
+                <ScrollFloat
+                    animationDuration={1}
+                    ease='back.inOut(2)'
+                    scrollStart='center bottom+=10%'
+                    scrollEnd='bottom bottom-=50%'
+                    stagger={0.03}
+                >
+                    SCHEDULE
+                </ScrollFloat>
             </div>
 
-            {!isMobile && <div className='flex flex-col gap-[178px] scale-[85%] '>
+            {!isMobile && <div className='flex flex-col gap-[178px] scale-[85%] pt-10'>
                 <div className='top-cards  w-[1164px] h-[500px] flex items-center justify-center gap-[12px]'>
                     <div className='relative '>
                         <Card

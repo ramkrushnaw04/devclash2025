@@ -6,6 +6,7 @@ import {
   faSquareInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import ScrollFloat from "./ScrollFloat";
 
 const Team = () => {
   const profiles = [
@@ -40,12 +41,22 @@ const Team = () => {
 
   return (
     <div className="w-full py-20 bg-black flex flex-col items-center px-10">
-      <h1
+      {/* <h1
         className="text-[#F16043] font-bold text-[40px] sm:text-[50px] md:text-[60px] lg:text-[72px] mt-8 mb-6"
         style={{ fontFamily: "Samarkan" }}
       >
         EVENT TEAM
-      </h1>
+      </h1> */}
+      <ScrollFloat
+                    animationDuration={1}
+                    ease='back.inOut(2)'
+                    scrollStart='center bottom+=10%'
+                    scrollEnd='bottom bottom-=50%'
+                    stagger={0.03}
+                >
+                    EVENT TEAM
+                </ScrollFloat>
+
       <div className="w-full flex flex-wrap justify-center gap-6">
         {profiles.map((profile, index) => (
           <div

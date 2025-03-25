@@ -2,6 +2,26 @@ import React from "react";
 import logo from "/logos/devclash.svg";
 import Timer from "./Timer";
 
+const ShinyText = ({ text, disabled = false, speed = 5, className = '' }) => {
+    const animationDuration = `${speed}s`;
+  
+    return (
+      <div
+        className={`text-[#b5b5b5a4] bg-clip-text inline-block ${disabled ? '' : 'animate-shine'} ${className}`}
+        style={{
+          backgroundImage: 'linear-gradient(120deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 60%)',
+          backgroundSize: '200% 100%',
+          WebkitBackgroundClip: 'text',
+          animationDuration: animationDuration,
+        }}
+      >
+        {text}
+      </div>
+    );
+  };
+
+  
+
 const Hero = () => {
     return (
         <main className="w-full flex flex-col items-center justify-start h-[calc(100vh-82px)] sm:h-[calc(100vh-102px)] px-4 sm:px-6">
@@ -39,7 +59,7 @@ const Hero = () => {
 
             {/* Participate Button */}
             <button
-                className="text-white text-[18px] sm:text-[22px] mt-10 px-[30px] py-[12px] sm:px-[40px] sm:py-[15px] border-2 border-white rounded-[50px] cursor-pointer bg-transparent hover:bg-white hover:text-black transition-all "
+                className="text-black bg-white text-[18px] sm:text-[22px] mt-2 sm:mt-10 px-[30px] py-[12px] sm:px-[40px] sm:py-[15px] border-2 border-white rounded-[50px] cursor-pointer hover:bg- hover:text-black transition-all "
                 style={{ fontFamily: "Samarkan" }}
             >
                 Participate Now

@@ -1,10 +1,20 @@
 import React from 'react';
+import ScrollFloat from './ScrollFloat';
 
 const AboutUsCard = () => {
   return (
     <div id='about' className="flex bg-black items-center justify-center p-4 pt-36 pb-8">
       <div className="bg-stone flex flex-col  gap-16 text-white rounded-2xl border-3 border-[rgb(165,129,74)] bg-[#372511] p-8 max-w-4xl text-center ">
-        <h2 className="text-7xl font-bold text-[#F16043]" style={{ fontFamily: 'Samarkan' }}>ABOUT US</h2>
+        {/* <h2 className="text-7xl font-bold text-[#F16043]" style={{ fontFamily: 'Samarkan' }}>ABOUT US</h2> */}
+        <ScrollFloat
+                    animationDuration={1}
+                    ease='back.inOut(2)'
+                    scrollStart='center bottom+=10%'
+                    scrollEnd='bottom bottom-=50%'
+                    stagger={0.03}
+                >
+                    ABOUT US
+                </ScrollFloat>
         
         <p className="text-lg">
           DevKraft is a student-founded club on a mission to transform the engineering experience. We're

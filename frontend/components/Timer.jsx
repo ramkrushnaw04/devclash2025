@@ -67,99 +67,122 @@ const Timer = () => {
 
                 <div className="flex flex-col items-center">
                     <div className="flex items-center">
-                        <GoldenFrame number={timeLeft.days.toString().padStart(2, "0")} />
+                        <GoldenFrame number={timeLeft.days.toString().padStart(2, "0")} text={'DAYS'}/>
+
+                        
                         <span className="text-white text-[60px] sm:text-[80px] font-bold ml-2" style={{ fontFamily: "Samarkan" }}>
                             :
                         </span>
                     </div>
-                    <p
+                    {/* <p
                         className="text-white text-[12px] sm:text-[16px]"
                         style={{ fontFamily: "Samarkan" }}
                     >
                         DAYS
-                    </p>
+                    </p> */}
                 </div>
 
                 {/* Hours */}
                 <div className="flex flex-col items-center">
                     <div className="flex items-center">
-                        <GoldenFrame number={timeLeft.hours.toString().padStart(2, "0")} />
+                        <GoldenFrame number={timeLeft.hours.toString().padStart(2, "0")} text={'HOURS'} />
                         <span className="text-white text-[60px] sm:text-[80px] font-bold ml-2" style={{ fontFamily: "Samarkan" }}>
                             :
                         </span>
                     </div>
-                    <p
+                    {/* <p
                         className="text-white text-[12px] sm:text-[16px]"
                         style={{ fontFamily: "Samarkan" }}
                     >
                         HOURS
-                    </p>
+                    </p> */}
                 </div>
 
                 {/* Minutes */}
                 <div className="flex flex-col items-center">
                     <div className="flex items-center">
-                        <GoldenFrame number={timeLeft.minutes.toString().padStart(2, "0")} />
+                        <GoldenFrame number={timeLeft.minutes.toString().padStart(2, "0")} text={'MINUTES'}/>
                         <span className="text-white text-[60px] sm:text-[80px] font-bold ml-2" style={{ fontFamily: "Samarkan" }}>
                             :
                         </span>
                     </div>
-                    <p
+                    {/* <p
                         className="text-white text-[12px] sm:text-[16px]"
                         style={{ fontFamily: "Samarkan" }}
                     >
                         MINUTES
-                    </p>
+                    </p> */}
                 </div>
 
                 {/* Seconds */}
                 <div className="flex flex-col items-center">
-                    <GoldenFrame number={timeLeft.seconds.toString().padStart(2, "0")} />
-                    <p
+                    <GoldenFrame number={timeLeft.seconds.toString().padStart(2, "0")} text={'SECONDS'} />
+                    {/* <p
                         className="text-white text-[12px] sm:text-[16px]"
                         style={{ fontFamily: "Samarkan" }}
                     >
                         SECONDS
-                    </p>
+                    </p> */}
                 </div>
             </div>}
 
 
-            {isMobile && <div className="w-full sm:w-[700px] flex justify-center items-center gap-2 sm:gap-4">
-                {/* Mobile: Vertical stack, Desktop: Horizontal with labels */}
-                <div className="flex flex-col  items-center justify-center ">
-                    {/* Mobile view - stacked vertically without labels or colons */}
-                    <h1
-                        className="text-orange-500 text-[70px] font-bold"
-                        style={{ fontFamily: "Kruti" }}
-                    >
-                        <GoldenFrame number={timeLeft.days.toString().padStart(2, "0")} />
-                    </h1>
-
-                    <h1
-                        className="text-orange-500 text-[70px] font-bold"
-                        style={{ fontFamily: "Kruti" }}
-                    >
-                        <GoldenFrame number={timeLeft.hours.toString().padStart(2, "0")} />
-                    </h1>
-
-                    <h1
-                        className="text-orange-500 text-[70px] font-bold"
-                        style={{ fontFamily: "Kruti" }}
-                    >
-                        <GoldenFrame number={timeLeft.minutes.toString().padStart(2, "0")} />
-                    </h1>
-
-                    <h1
-                        className="text-orange-500 text-[70px] font-bold"
-                        style={{ fontFamily: "Kruti" }}
-                    >
-                         <GoldenFrame number={timeLeft.seconds.toString().padStart(2, "0")} />
-                    </h1>
-                </div>
 
 
-            </div>}
+
+
+
+
+
+
+
+
+
+
+
+
+            {isMobile && (
+    <div className="w-full sm:w-[700px] flex justify-center items-center">
+        <div className="grid grid-cols-2 gap-4 place-items-center">
+            <h1
+                className="text-orange-500 text-[70px] font-bold"
+                style={{ fontFamily: "Kruti" }}
+            >
+                <GoldenFrame number={timeLeft.days.toString().padStart(2, "0")} text={'DAYS'} />
+            </h1>
+
+            <h1
+                className="text-orange-500 text-[70px] font-bold"
+                style={{ fontFamily: "Kruti" }}
+            >
+                <GoldenFrame number={timeLeft.hours.toString().padStart(2, "0")} text={'HOURS'} />
+            </h1>
+
+            <h1
+                className="text-orange-500 text-[70px] font-bold"
+                style={{ fontFamily: "Kruti" }}
+            >
+                <GoldenFrame number={timeLeft.minutes.toString().padStart(2, "0")} text={'MINUTES'} />
+            </h1>
+
+            <h1
+                className="text-orange-500 text-[70px] font-bold"
+                style={{ fontFamily: "Kruti" }}
+            >
+                <GoldenFrame number={timeLeft.seconds.toString().padStart(2, "0")} text={'SECONDS'}  />
+            </h1>
+        </div>
+    </div>
+)}
+
+
+
+
+
+
+
+
+
         </>
     );
 };
