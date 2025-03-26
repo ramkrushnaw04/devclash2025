@@ -18,7 +18,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={
-             <div className=" ">
+             <div className="">
              {/* <SplashCursor  /> */}
              <Navbar />
              <Hero />
