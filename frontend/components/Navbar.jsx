@@ -87,6 +87,7 @@ const DevKraftNav = () => {
                     <a href="#schedule" className="hover:text-white transition-colors">Schedule</a>
                     <a href="#prizes" className="hover:text-white transition-colors">Prizes</a>
                     <a href="#contact" className="hover:text-white transition-colors">Contact</a>
+                    <a href="/team" className="hover:text-white transition-colors">Team</a>
                 </nav>}
             </div>
 

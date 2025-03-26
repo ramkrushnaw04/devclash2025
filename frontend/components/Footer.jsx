@@ -27,13 +27,13 @@ const Footer = () => {
                     CONTACT
                 </h1>
                 <div className='flex gap-5 sm:gap-8 md:gap-12 items-center justify-center my-2'>
-                    <a href='tel:+1234567890' aria-label="Phone">
+                    <a href='tel:+919922026188' aria-label="Phone">
                         <FaPhoneAlt className='text-white text-3xl sm:text-4xl hover:text-[#F16043] transition-colors' />
                     </a>
-                    <a href='mailto:contact@devkraft.com' aria-label="Email">
+                    <a href='mailto:devkraftclub@gmail.com' aria-label="Email">
                         <TfiEmail className='text-white text-3xl sm:text-4xl hover:text-[#F16043] transition-colors' />
                     </a>
-                    <a href='#map' aria-label="Location">
+                    <a href='https://maps.app.goo.gl/Ho8C7FkShwrSrH2R7?g_st=aw' aria-label="Location">
                         <FaLocationDot className='text-white text-3xl sm:text-4xl hover:text-[#F16043] transition-colors' />
                     </a>
                 </div>
@@ -45,16 +45,16 @@ const Footer = () => {
                     SOCIALS
                 </h1>
                 <div className='flex gap-5 sm:gap-6 md:gap-8 items-center justify-center my-2 flex-wrap'>
-                    <a href='https://wa.me/+1234567890' aria-label="WhatsApp">
+                    <a href='https://bit.ly/3vNNbkZ' aria-label="WhatsApp">
                         <FaWhatsappSquare className='text-white text-3xl sm:text-4xl hover:text-[#F16043] transition-colors' />
                     </a>
-                    <a href='https://linkedin.com/company/devkraft' aria-label="LinkedIn">
+                    <a href='https://www.linkedin.com/company/dev-kraft/mycompany/' aria-label="LinkedIn">
                         <FaLinkedin className='text-white text-3xl sm:text-4xl hover:text-[#F16043] transition-colors' />
                     </a>
-                    <a href='https://x.com/devkraft' aria-label="Twitter">
+                    <a href='https://x.com/devkraftdpu' aria-label="Twitter">
                         <FaSquareXTwitter className='text-white text-3xl sm:text-4xl hover:text-[#F16043] transition-colors' />
                     </a>
-                    <a href='https://instagram.com/devkraft' aria-label="Instagram">
+                    <a href='https://www.instagram.com/devkraft.dpu?igsh=ZjZ6bjZpeTlrdGo2' aria-label="Instagram">
                         <FaInstagramSquare className='text-white text-3xl sm:text-4xl hover:text-[#F16043] transition-colors' />
                     </a>
                 </div>
