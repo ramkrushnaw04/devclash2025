@@ -24,7 +24,7 @@ const ShinyText = ({ text, disabled = false, speed = 5, className = '' }) => {
 
 const Hero = () => {
     return (
-        <main className="w-full flex flex-col items-center justify-start h-[calc(100vh-82px)] sm:h-[calc(100vh-102px)] px-4 sm:px-6">
+        <main className="w-full flex flex-col items-center justify-start h-screen pt-[82px] sm:pt-[102px]  px-4 sm:px-6">
 
             
 
