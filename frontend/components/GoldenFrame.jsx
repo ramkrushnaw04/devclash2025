@@ -27,7 +27,7 @@ const GoldenFrame = ({ number, text }) => {
                     {/* Content area */}
                     <div className="relative p-6 text-center">
                         <h1 
-                            className="text-[120px] font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#F16043] via-[#ec8f32] to-[#be6e19]"
+                            className="text-[80px] font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#F16043] via-[#ec8f32] to-[#be6e19]"
                             style={{ fontFamily: "Kruti" }}
                         >
                             {number}

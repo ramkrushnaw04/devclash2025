@@ -63,6 +63,7 @@ const Hero = () => {
             <button
                 className="text-white bg-transparent text-[18px] sm:text-[22px] mt-2 sm:mt-10 px-[30px] py-[12px] sm:px-[40px] sm:py-[15px] border-2 border-white rounded-[50px] cursor-pointer hover:bg-white hover:text-black transition-all "
                 style={{ fontFamily: "Samarkan" }}
+                onClick={() => window.location.href = "https://forms.gle/Mw4EhUBZWadVYDXJ7"}
             >
                 Participate Now
             </button>

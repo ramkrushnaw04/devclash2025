@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const Card = ({ title, children }) => {
     return (
         <motion.div 
-            className="w-[350px] bg-[#372511] rounded-3xl border-3 border-[#A37E48] p-6 flex flex-col flex-shrink-0 min-h-[320px] items-center text-center"
+            className="sm:w-[350px] w-64 bg-[#372511] rounded-3xl border-3 border-[#A37E48] p-6 flex flex-col flex-shrink-0 min-h-[320px] items-center text-center"
             whileHover={{ 
                 scale: 1.05,
                 boxShadow: '0 10px 20px rgba(241, 96, 67, 0.2)',

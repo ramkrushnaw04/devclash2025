@@ -9,23 +9,33 @@ import Schedule from "../components/Schedule"
 import Team from "../components/Team"
 import Tracks from "../components/Tracks"
 import SplashCursor from "../components/SplashCursor"
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
 
 
   return (
-    <div className=" ">
-        {/* <SplashCursor  /> */}
-        <Navbar />
-        <Hero />
-        <AboutUs />
-        <Tracks />
-        <Schedule />
-        <Prizes />
-        <EventDetails />
-        {/* <Team />x */}
-        <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={
+             <div className=" ">
+             {/* <SplashCursor  /> */}
+             <Navbar />
+             <Hero />
+             <AboutUs />
+             <Tracks />
+             <Schedule />
+             <Prizes />
+             <EventDetails />
+             {/* <Team />x */}
+             <Footer />
+         </div>
+        } />
+        <Route path="/team" element={<Team />} />
+      </Routes>
+    </BrowserRouter>
+
+   
   )
 }
 
