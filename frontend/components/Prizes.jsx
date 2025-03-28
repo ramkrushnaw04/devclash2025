@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollFloat from './ScrollFloat';
-
 import { motion } from 'framer-motion';
+
 
 const Card = ({ src, title }) => {
   return (
@@ -9,18 +9,25 @@ const Card = ({ src, title }) => {
       className="w-64 sm:w-64 bg-[#372511] rounded-3xl border-4 border-[#A37E48] p-6 flex flex-col items-center text-center h-auto min-h-[250px] sm:min-h-[320px]"
       whileHover={{ 
         scale: 1.05,
-        transition: { duration: 0.3 }
+        boxShadow: '0 10px 20px rgba(241, 96, 67, 0.2)',
+        transition: { 
+          duration: 0.3,
+          ease: "easeInOut"
+        }
       }}
       whileTap={{ 
         scale: 0.95,
         transition: { duration: 0.2 }
       }}
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ 
-        duration: 0.5,
-        type: "spring",
-        stiffness: 100 
+      whileInView={{ 
+        opacity: 1, 
+        y: 0,
+        transition: { 
+          duration: 0.5,
+          type: "spring",
+          stiffness: 100 
+        }
       }}
     >
       <div className='w-full h-40 sm:h-48 flex items-center justify-center mb-4'>
@@ -32,14 +39,34 @@ const Card = ({ src, title }) => {
             rotate: 2,
             transition: { duration: 0.3 }
           }}
+          initial={{ opacity: 0 }}
+          whileInView={{ 
+            opacity: 1,
+            transition: { 
+              duration: 0.5,
+              delay: 0.2 
+            }
+          }}
         />
       </div>
-      <h1 className="text-[#F16043] text-base sm:text-lg font-medium mt-auto">
+      <motion.h1 
+        className="text-[#F16043] text-base sm:text-lg font-medium mt-auto"
+        initial={{ opacity: 0 }}
+        whileInView={{ 
+          opacity: 1,
+          transition: { 
+            duration: 0.5,
+            delay: 0.4 
+          }
+        }}
+      >
         {title}
-      </h1>
+      </motion.h1>
     </motion.div>
   );
 };
+
+
 
 
 

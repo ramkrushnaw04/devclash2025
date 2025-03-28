@@ -14,29 +14,34 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
 
 
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={
-             <div className="">
-             {/* <SplashCursor  /> */}
-             <Navbar />
-             <Hero />
-             <AboutUs />
-             <Tracks />
-             <Schedule />
-             <Prizes />
-             <EventDetails />
-             {/* <Team />x */}
-             <Footer />
-         </div>
-        } />
-        <Route path="/team" element={<Team />} />
-      </Routes>
-    </BrowserRouter>
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={
+                    <>
+                        {/* <SplashCursor  /> */}
+                        <Navbar isMain={true} />
+                        <Hero />
+                        <Tracks />
+                        <Schedule />
+                        <Prizes />
+                        <EventDetails />
+                        <AboutUs />
+                        {/* <Team />x */}
+                        <Footer />
+                    </>
+                } />
+                <Route path="/team" element={
+                    <>
+                        <Navbar isMain={false} />
+                        <Team />
+                    </>
+                } />
+            </Routes>
+        </BrowserRouter>
 
-   
-  )
+
+    )
 }
 
 export default App

@@ -62,8 +62,6 @@ const Timer = () => {
     return (
         <>
             {!isMobile && <div className="w-full sm:w-[700px] flex justify-center items-center gap-2 sm:gap-4" >
-                {/* <Ring /> */}
-                {/* Days */}
 
                 <div className="flex flex-col items-center">
                     <div className="flex items-center">
@@ -74,12 +72,6 @@ const Timer = () => {
                             :
                         </span>
                     </div>
-                    {/* <p
-                        className="text-white text-[12px] sm:text-[16px]"
-                        style={{ fontFamily: "Samarkan" }}
-                    >
-                        DAYS
-                    </p> */}
                 </div>
 
                 {/* Hours */}
@@ -90,12 +82,6 @@ const Timer = () => {
                             :
                         </span>
                     </div>
-                    {/* <p
-                        className="text-white text-[12px] sm:text-[16px]"
-                        style={{ fontFamily: "Samarkan" }}
-                    >
-                        HOURS
-                    </p> */}
                 </div>
 
                 {/* Minutes */}
@@ -106,23 +92,11 @@ const Timer = () => {
                             :
                         </span>
                     </div>
-                    {/* <p
-                        className="text-white text-[12px] sm:text-[16px]"
-                        style={{ fontFamily: "Samarkan" }}
-                    >
-                        MINUTES
-                    </p> */}
                 </div>
 
                 {/* Seconds */}
                 <div className="flex flex-col items-center">
                     <GoldenFrame number={timeLeft.seconds.toString().padStart(2, "0")} text={'SECONDS'} />
-                    {/* <p
-                        className="text-white text-[12px] sm:text-[16px]"
-                        style={{ fontFamily: "Samarkan" }}
-                    >
-                        SECONDS
-                    </p> */}
                 </div>
             </div>}
 

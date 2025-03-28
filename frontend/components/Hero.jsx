@@ -2,6 +2,7 @@ import React from "react";
 import logo from "/logos/devclash.svg";
 import Timer from "./Timer";
 
+
 const ShinyText = ({ text, disabled = false, speed = 5, className = '' }) => {
     const animationDuration = `${speed}s`;
   
@@ -25,7 +26,6 @@ const ShinyText = ({ text, disabled = false, speed = 5, className = '' }) => {
 const Hero = () => {
     return (
         <main className="w-full flex flex-col items-center justify-start  h-[100svh] pt-[82px] sm:pt-[102px]  px-4 sm:px-6">
-
             
 
             {/* Background image with object-cover to prevent squeezing */}
@@ -48,7 +48,7 @@ const Hero = () => {
 
             {/* Tagline */}
             <p
-                className="text-white text-[14px] sm:text-[16px] md:text-[18px] mb-[30px] mt-[-80px] "
+                className="text-white text-[14px] sm:text-[16px] md:text-[23px] mb-[30px] mt-[-80px] "
                 style={{ fontFamily: "Samarkan" }}
             >
                 Pune's Biggest Tech Clash
