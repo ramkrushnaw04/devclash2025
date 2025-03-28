@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 
 const Card = ({ title, date, info }) => {
     return (
-        <motion.div 
+        <motion.div
             className='w-72'
-            whileHover={{ 
+            whileHover={{
                 scale: 1.05,
                 // boxShadow: '0 10px 20px rgba(241, 96, 67, 0.2)',
-                transition: { 
+                transition: {
                     duration: 0.3,
                     ease: "easeInOut"
                 }
@@ -18,9 +18,39 @@ const Card = ({ title, date, info }) => {
         >
             <div className="flex items-center justify-center w-64 m-auto">
                 <div className="bg-[#372511] text-white rounded-xl border-2 border-amber-700 p-4 text-center shadow-lg">
-                    <h2 className="text-xl font-bold mb-2">{title}</h2>
-                    <h3 className="text-2xl font-bold text-[#F16043] mb-6">{date}</h3>
-                    <p className="text-sm h-[140px]"> {info} </p>
+                    <motion.h2
+                        className="text-xl font-bold mb-2"
+                        initial={{ opacity: 0 }}
+                        whileInView={{
+                            opacity: 1,
+                            transition: {
+                                duration: 0.5,
+                                delay: 0.2
+                            }
+                        }}
+                    >{title}</motion.h2>
+                    <motion.h3
+                        className="text-2xl font-bold text-[#F16043] mb-6"
+                        initial={{ opacity: 0 }}
+                        whileInView={{
+                            opacity: 1,
+                            transition: {
+                                duration: 0.5,
+                                delay: 0.3
+                            }
+                        }}
+                    >{date}</motion.h3>
+                    <motion.p
+                        className="text-sm h-[140px]"
+                        initial={{ opacity: 0 }}
+                        whileInView={{
+                            opacity: 1,
+                            transition: {
+                                duration: 0.5,
+                                delay: 0.4
+                            }
+                        }}
+                    > {info} </motion.p>
                 </div>
             </div>
         </motion.div>

@@ -7,6 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import devclashlogo from "/logos/devkraft1.png"
+import { motion } from 'framer-motion';
 
 const Footer = () => {
     return (
@@ -17,12 +18,32 @@ const Footer = () => {
             <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent"></div>
 
             {/* Logo Section */}
-            <div className='w-3/4 z-10 sm:w-2/4 md:w-1/3 lg:w-1/4 max-w-[300px] mb-8 hover:scale-105 transition-transform'>
-                <img src={devclashlogo} className='h-full w-full object-contain' alt="DevKraft Logo"/>
-            </div>
+            <motion.div
+                className='w-3/4 z-10 sm:w-2/4 md:w-1/3 lg:w-1/4 max-w-[300px] mb-8 hover:scale-105 transition-transform'
+                initial={{ opacity: 0 }}
+                whileInView={{
+                    opacity: 1,
+                    transition: {
+                        duration: 0.5,
+                        delay: 0.2
+                    }
+                }}
+            >
+                <img src={devclashlogo} className='h-full w-full object-contain' alt="DevKraft Logo" />
+            </motion.div>
 
             {/* Contact Section */}
-            <div className='flex z-10 flex-col gap-4 w-full max-w-lg'>
+            <motion.div
+                className='flex z-10 flex-col gap-4 w-full max-w-lg'
+                initial={{ opacity: 0 }}
+                whileInView={{
+                    opacity: 1,
+                    transition: {
+                        duration: 0.5,
+                        delay: 0.3
+                    }
+                }}
+            >
                 <h1 className="text-[#F16043] text-2xl sm:text-3xl md:text-4xl font-bold text-center">
                     CONTACT
                 </h1>
@@ -37,10 +58,20 @@ const Footer = () => {
                         <FaLocationDot className='text-white text-3xl sm:text-4xl hover:text-[#F16043] transition-colors' />
                     </a>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Social Media Section */}
-            <div className='mt-8 z-10 sm:mt-10 flex flex-col gap-4 w-full max-w-lg'>
+            <motion.div
+                className='mt-8 z-10 sm:mt-10 flex flex-col gap-4 w-full max-w-lg'
+                initial={{ opacity: 0 }}
+                whileInView={{
+                    opacity: 1,
+                    transition: {
+                        duration: 0.5,
+                        delay: 0.4
+                    }
+                }}
+            >
                 <h1 className="text-[#F16043] text-2xl sm:text-3xl md:text-4xl font-bold text-center">
                     SOCIALS
                 </h1>
@@ -58,14 +89,24 @@ const Footer = () => {
                         <FaInstagramSquare className='text-white text-3xl sm:text-4xl hover:text-[#F16043] transition-colors' />
                     </a>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Copyright Footer */}
-            <div className='absolute bottom-0 z-10 pb-6'>
+            <motion.div
+                className='absolute bottom-0 z-10 pb-6'
+                initial={{ opacity: 0 }}
+                whileInView={{
+                    opacity: 1,
+                    transition: {
+                        duration: 0.5,
+                        delay: 0.5
+                    }
+                }}
+            >
                 <h3 className='text-sm text-white text-center'>
                     Design and Developed by Team Devkraft © {new Date().getFullYear()}
                 </h3>
-            </div>
+            </motion.div>
         </div>
     );
 };

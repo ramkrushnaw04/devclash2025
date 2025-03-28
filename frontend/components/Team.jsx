@@ -39,7 +39,7 @@ const Card = ({ profile }) => {
                     className="text-white text-[16px] md:text-[18px] lg:text-[20px]"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    transition={{ duration: 0.5 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
                 >
                     {profile.Name}
                 </motion.h2>
@@ -47,7 +47,7 @@ const Card = ({ profile }) => {
                     className="font-bold text-[#F16043] text-[14px] md:text-[16px]"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
                 >
                     {profile.Post}
                 </motion.h2>
