@@ -5,40 +5,60 @@ import { motion } from 'framer-motion';
 
 const TrackCard = ({ track }) => {
     return (
-      <motion.div 
-        className="w-72 rounded-3xl border-3 border-[rgb(165,129,74)] bg-opacity-20 bg-[#372511] p-6 flex-shrink-0"
-        whileHover={{ 
-          scale: 1.05,
-          boxShadow: '0 10px 20px rgba(241, 96, 67, 0.2)',
-          transition: { 
-            duration: 0.3,
-            ease: "easeInOut"
-          }
-        }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <motion.img 
-                  src={track.imageUrl} 
-                  className='object-contain rounded-xl max-h-full max-w-full'
-                  whileHover={{ 
+        <motion.div
+            className="w-72 rounded-3xl border-3 border-[rgb(165,129,74)] bg-opacity-20 bg-[#372511] p-6 flex-shrink-0"
+            whileHover={{
+                scale: 1.05,
+                boxShadow: '0 10px 20px rgba(241, 96, 67, 0.2)',
+                transition: {
+                    duration: 0.3,
+                    ease: "easeInOut"
+                }
+            }}
+            whileTap={{ scale: 0.95 }}
+        >
+            <motion.img
+                src={track.imageUrl}
+                className='object-contain rounded-xl max-h-full max-w-full'
+                whileHover={{
                     scale: 1.1,
                     rotate: 2,
                     transition: { duration: 0.3 }
-                  }}
-                />
-        <h2 className="text-xl md:text-2xl font-bold text-center text-[#F16043] font-samarkan  my-4">
-          {track.title}
-        </h2>
-        <p className="text-gray-100 text-center text-sm md:text-base">
-          {track.description}
-        </p>
-      </motion.div>
+                }}
+            />
+            <motion.h2
+                className="text-xl md:text-2xl font-bold text-center text-[#F16043] font-samarkan  my-4"
+                initial={{ opacity: 0 }}
+                whileInView={{
+                    opacity: 1,
+                    transition: {
+                        duration: 0.5,
+                        delay: 0.2
+                    }
+                }}
+            >
+                {track.title}
+            </motion.h2>
+            <motion.p
+                className="text-gray-100 text-center text-sm md:text-base"
+                initial={{ opacity: 0 }}
+                whileInView={{
+                    opacity: 1,
+                    transition: {
+                        duration: 0.5,
+                        delay: 0.4
+                    }
+                }}
+            >
+                {track.description}
+            </motion.p>
+        </motion.div>
     );
-  };
+};
 
 
 
-  
+
 
 
 const Tracks = () => {

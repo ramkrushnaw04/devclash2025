@@ -6,20 +6,41 @@ import { motion } from 'framer-motion';
 
 const Card = ({ title, children }) => {
     return (
-        <motion.div 
+        <motion.div
             className="sm:w-[350px] w-64 bg-[#372511] rounded-3xl border-3 border-[#A37E48] p-6 flex flex-col flex-shrink-0 min-h-[320px] items-center text-center"
-            whileHover={{ 
+            whileHover={{
                 scale: 1.05,
                 boxShadow: '0 10px 20px rgba(241, 96, 67, 0.2)',
-                transition: { 
+                transition: {
                     duration: 0.3,
                     ease: "easeInOut"
                 }
             }}
             whileTap={{ scale: 0.95 }}
         >
-            <h1 className="text-[#F16043] text-2xl sm:text-3xl font-bold">{title}</h1>
-            {children}
+            <motion.h1
+                className="text-[#F16043] text-2xl sm:text-3xl font-bold"
+                initial={{ opacity: 0 }}
+                whileInView={{
+                    opacity: 1,
+                    transition: {
+                        duration: 0.5,
+                        delay: 0.2
+                    }
+                }}>{title}</motion.h1>
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{
+                    opacity: 1,
+                    transition: {
+                        duration: 0.5,
+                        delay: 0.3
+                    }
+                }}
+            >
+
+                {children}
+            </motion.div>
         </motion.div>
     );
 };
@@ -33,9 +54,9 @@ const EventDetails = () => {
         EVENT DETAILS
       </h1> */}
 
-        <img className='w-full h-full absolute top-0 left-0  object-cover brightness-[10%]' src="/images/event-details-background.webp" alt="" />
-        <div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black to-transparent"></div>
-        <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent"></div>
+            <img className='w-full h-full absolute top-0 left-0  object-cover brightness-[10%]' src="/images/event-details-background.webp" alt="" />
+            <div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent"></div>
 
 
             <div className='flex flex-col sm:flex-row items-center justify-center sm:gap-7'>

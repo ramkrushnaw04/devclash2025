@@ -4,20 +4,13 @@ import ScrollFloat from './ScrollFloat';
 
 const AboutUsCard = () => {
   return (
-    <motion.div 
+    <div 
       id='about' 
       className="flex relative min-h-screen bg-black items-center justify-center p-4 pt-36 pb-8"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
     >
-      <motion.img 
+      <img 
         className='w-full h-full absolute top-0 left-0 object-cover brightness-[10%]' 
         src="/images/about-us-background.webp" 
-        alt="" 
-        initial={{ scale: 1.1 }}
-        whileInView={{ scale: 1 }}
-        transition={{ duration: 0.5 }}
       />
       <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black to-transparent"></div>
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent"></div>
@@ -62,7 +55,7 @@ const AboutUsCard = () => {
           based events.
         </motion.p>
       </motion.div>
-    </motion.div>
+    </div>
   );
 };
 
