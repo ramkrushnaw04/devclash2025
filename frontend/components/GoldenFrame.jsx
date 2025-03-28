@@ -34,7 +34,7 @@ const GoldenFrame = ({ number, text }) => {
                         </h1>
                         {text && (
                             <p 
-                                className="text-sm text-white mt-2"
+                                className="text-sm md:text-xl text-white mt-2"
                                 style={{ fontFamily: "Samarkan" }}
                             >
                                 {text}
