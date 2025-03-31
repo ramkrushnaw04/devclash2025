@@ -25,11 +25,11 @@ const ShinyText = ({ text, disabled = false, speed = 5, className = '' }) => {
 
 const Hero = () => {
     return (
-        <main className="w-full flex flex-col items-center justify-start  h-[100svh] pt-[82px] sm:pt-[102px]  px-4 sm:px-6">
+        <main className="w-full flex flex-col items-center justify-start min-h-[850px] h-screen pt-[82px] sm:pt-[102px] pb-4  px-4 sm:px-6">
             
 
             {/* Background image with object-cover to prevent squeezing */}
-            <div className="absolute top-0 left-0 w-full h-full z-[-10] overflow-hidden">
+            <div className="absolute top-0  left-0 w-full min-h-[850px] h-screen z-[-10] overflow-hidden">
                 <img 
                     className="w-full h-full object-cover brightness-[30%]" 
                     src="/backgrounds/background.png" 
@@ -61,7 +61,7 @@ const Hero = () => {
 
             {/* Participate Button */}
             <button
-                className="text-white bg-transparent text-[18px] sm:text-[22px] mt-2 sm:mt-10 px-[30px] py-[12px] sm:px-[40px] sm:py-[15px] border-2 border-white rounded-[50px] cursor-pointer hover:bg-white hover:text-black transition-all "
+                className="text-white  bg-transparent text-[18px] sm:text-[22px] mt-2 sm:mt-10 px-[30px] py-[12px] sm:px-[40px] sm:py-[15px] border-2 border-white rounded-[50px] cursor-pointer hover:bg-white hover:text-black transition-all "
                 style={{ fontFamily: "Samarkan" }}
                 onClick={() => window.location.href = "https://forms.gle/Mw4EhUBZWadVYDXJ7"}
             >

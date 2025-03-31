@@ -73,7 +73,7 @@ const Card = ({ src, title }) => {
 
 const EventDetails = () => {
     return (
-        <div id='prizes' className="w-full min-h-screen relative bg-black flex flex-col items-center py-20 px-4 sm:px-0">
+        <div id='prizes' className="w-full  relative bg-black flex flex-col items-center py-20 px-4 sm:px-0">
             {/* <h1 className="text-[#F16043] text-4xl sm:text-7xl font-bold text-center mb-8" style={{ fontFamily: 'Samarkan' }}>
                 PRIZES
             </h1> */}

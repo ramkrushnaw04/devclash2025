@@ -49,7 +49,7 @@ const Card = ({ title, children }) => {
 
 const EventDetails = () => {
     return (
-        <div className="w-full min-h-screen relative bg-black flex flex-col items-center py-20 sm:py-80 px-4 sm:px-0">
+        <div className="w-full relative bg-black flex flex-col items-center py-20 sm:py-80 px-4 sm:px-0">
             {/* <h1 className="text-[#F16043] text-4xl sm:text-6xl font-bold text-center" style={{ fontFamily: 'Samarkan' }}>
         EVENT DETAILS
       </h1> */}
@@ -111,9 +111,20 @@ const EventDetails = () => {
 
                 {/* EVENT LOCATION */}
                 <Card title="EVENT LOCATION">
-                    <p className="text-white text-sm sm:text-md mt-3 sm:mt-6">
-                        Venue details will be announced soon! Stay tuned.
-                    </p>
+                    <div className="eventSection withLocation">
+                        <a
+                            className="eventLocationAnchor"
+                            href="https://maps.app.goo.gl/hAtE8qGvbsAwTjtF7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                className="eventLocationImage rounded-2xl mt-5"
+                                src={"/icons/map.png"}
+                                alt="Google Map showing event location"
+                            />
+                        </a>
+                    </div>
                 </Card>
 
             </div>
