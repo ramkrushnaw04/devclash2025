@@ -206,8 +206,9 @@ const Team = () => {
             Name: "Madhav Sain",
             Post: "Marketing Co-Lead",
             img: "/people/Madhav.png",
-            linkedIn: "",
-            whatsApp: ""
+            linkedIn: "https://www.linkedin.com/in/madhav-sain-0a580b290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            whatsApp: "",
+            instagram: "https://www.instagram.com/madhavsain_?utm_source=qr&igsh=MTUyb21vOW9tbmtrbA=="
         },
         {
             Name: "Anmol Kadam",
@@ -215,7 +216,8 @@ const Team = () => {
             img: "",
             linkedIn: "",
             whatsApp: "",
-            instagram: "https://www.instagram.com/_omckar?igsh=cHdlemo3eHNoOXF6"
+            instagram: "https://www.instagram.com/justt.anmol._?igsh=MWFpeXpocHdhZDF6dg=="
+            
         },
         {
             Name: "Harsh Khillari",
@@ -231,7 +233,7 @@ const Team = () => {
             img: "/people/Omkar.jpg",
             linkedIn: "https://www.linkedin.com/in/omkar-chindarkar-5590a719b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             whatsApp: "",
-            instagram: "https://www.instagram.com/justt.anmol._?igsh=MWFpeXpocHdhZDF6dg=="
+            instagram: "https://www.instagram.com/_omckar?igsh=cHdlemo3eHNoOXF6"
         },
         {
             Name: "Yash Arote",

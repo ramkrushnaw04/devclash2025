@@ -97,7 +97,7 @@ const EventDetails = () => {
 
                 {/* EVENT TIMING */}
                 <Card title="EVENT TIMING">
-                    <div className="mt-12 flex flex-col gap-4 mt-4">
+                    <div className="mt-12 relative flex flex-col gap-4 mt-4">
                         <div className="flex gap-3 items-center">
                             <FaRegCalendarAlt className="text-xl sm:text-2xl text-white" />
                             <h3 className="text-white text-sm sm:text-lg">From 5 Apr to 6 Apr 2025</h3>
@@ -108,6 +108,8 @@ const EventDetails = () => {
                         </div>
                     </div>
                 </Card>
+
+                
 
                 {/* EVENT LOCATION */}
                 <Card title="EVENT LOCATION">
