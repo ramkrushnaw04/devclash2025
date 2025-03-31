@@ -154,7 +154,7 @@ const Schedule = () => {
                     <div className='relative '>
                         <Card
                             title={'Registrations Open'}
-                            date={'23 March'}
+                            date={'27 March'}
                             info={'On this day, the registration portal will open for team leaders to enroll themselves and their respective teams. Teams should ensure timely registration to secure their spot in the hackathon.'}
                         />
                         <div className='absolute left-36'>
@@ -166,7 +166,7 @@ const Schedule = () => {
                     <div className='relative '>
                         <Card
                             title={'Hackathon Kickoff'}
-                            date={'6 April'}
+                            date={'5 April'}
                             info={'The official commencement of the hackathon! Participants can start working on their projects. Resources, guidelines, and support will be provided to ensure a smooth start to the coding journey.'}
                         />
                         <div className='absolute left-36'>
@@ -178,7 +178,7 @@ const Schedule = () => {
                     <div className='relative '>
                         <Card
                             title={'Results Out'}
-                            date={'15 April'}
+                            date={'Soon'}
                             info={"The moment of truth! Winners will be announced. It’s important to note that this date is subject to change based on project complexity. Stay tuned for updates and mark your calendars!"}
                         />
                         <div className='absolute left-36'>
@@ -197,7 +197,7 @@ const Schedule = () => {
                         </div>
                         <Card
                             title={'Last date to register'}
-                            date={'3 April'}
+                            date={'4 April'}
                             info={'This marks the deadline for all teams and individual participants to complete their registration process. Late registrations will not be considered, so make sure to register before this date.'}
                         />
                     </div>
@@ -208,7 +208,7 @@ const Schedule = () => {
                         </div>
                         <Card
                             title={'Hackathon Concludes'}
-                            date={'7 April'}
+                            date={'6 April'}
                             info={'Participants need to wrap up their projects as the hackathon concludes. Submission guidelines will be provided, and teams must adhere to the deadlines for project submission.'}
                         />
                     </div>

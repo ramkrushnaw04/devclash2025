@@ -1,7 +1,7 @@
 import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareWhatsapp, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faSquareWhatsapp, faLinkedin, faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
 import ScrollFloat from "./ScrollFloat";
 
 
@@ -94,6 +94,23 @@ const Card = ({ profile }) => {
                             />
                         </motion.a>
                     )}
+                    {profile.instagram && (
+                        <motion.a
+                            href={profile.instagram}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            whileHover={{ 
+                                scale: 1.2,
+                                transition: { duration: 0.2 }
+                            }}
+                            whileTap={{ scale: 0.9 }}
+                        >
+                            <FontAwesomeIcon
+                                icon={faSquareInstagram}
+                                className="text-[#F16043] text-[30px] hover:text-white transition-all duration-300"
+                            />
+                        </motion.a>
+                    )}
                 </motion.div>
             </div>
         </motion.div>
@@ -134,7 +151,8 @@ const Team = () => {
             Post: "Production Lead",
             img: "/people/KunalMalviya.jpg",
             linkedIn: "https://www.linkedin.com/in/kunal-malviya-656528257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            whatsApp: ""
+            whatsApp: "https://wa.me/qr/TE7U5MMEAREZC1",
+            instagram: "https://www.instagram.com/kunal_malviya_02?utm_source=qr&igsh=bjR3Z2xzNzl4ZG1p"
         },
         {
             Name: "Faiz Shaikh",
@@ -147,8 +165,9 @@ const Team = () => {
             Name: "Snehal Bairagi",
             Post: "Event Management Lead",
             img: "/people/SnehalBairagi.png",
-            linkedIn: "",
-            whatsApp: ""
+            linkedIn: "https://www.linkedin.com/in/snehal-bairagi-80a7b2246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            whatsApp: "",
+            instagram: "https://www.instagram.com/snehal_bairagi_14?igsh=NnBlc245cDd3cnlq"
         },
         {
             Name: "Prajwal Kulkarni",
@@ -164,8 +183,9 @@ const Team = () => {
             Name: "Shraddha Patil",
             Post: "Deputy Secretary",
             img: "/people/Shraddha.jpg",
-            linkedIn: "",
-            whatsApp: ""
+            linkedIn: "https://www.linkedin.com/in/shraddha-patil-90b5b631b",
+            whatsApp: "",
+            instagram: "https://www.instagram.com/ft.shrxdhha?igsh=MXV2cWJ6YTB2Y3lzZg=="
         },
         {
             Name: "Ramkrushna Waghchaure",
@@ -179,7 +199,8 @@ const Team = () => {
             Post: "Production Co-Lead",
             img: "/people/Kartik.jpg",
             linkedIn: "",
-            whatsApp: ""
+            whatsApp: "",
+            instagram: "https://www.instagram.com/kartiksoma_?igsh=MXBxeWdiaGh4MjFydQ=="
         },
         {
             Name: "Madhav Sain",
@@ -193,14 +214,32 @@ const Team = () => {
             Post: "Event Management Co-Lead",
             img: "",
             linkedIn: "",
-            whatsApp: ""
+            whatsApp: "",
+            instagram: "https://www.instagram.com/_omckar?igsh=cHdlemo3eHNoOXF6"
         },
         {
             Name: "Harsh Khillari",
             Post: "Public Relation Co-Lead",
             img: "/people/Harsh.jpg",
             linkedIn: "https://www.linkedin.com/in/harsh-khilari-26b97a22b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            whatsApp: ""
+            whatsApp: "https://wa.me/919106609329",
+            instagram: 'https://www.instagram.com/khilari17'
+        },
+        {
+            Name: "Omkar Chindarkar",
+            Post: "Content Lead",
+            img: "/people/Omkar.jpg",
+            linkedIn: "https://www.linkedin.com/in/omkar-chindarkar-5590a719b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            whatsApp: "",
+            instagram: "https://www.instagram.com/justt.anmol._?igsh=MWFpeXpocHdhZDF6dg=="
+        },
+        {
+            Name: "Yash Arote",
+            Post: "Data Manager",
+            img: "/people/Yash.jpg",
+            linkedIn: "https://www.linkedin.com/in/yash-arote-4a7713258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            whatsApp: "",
+            instagram: "https://www.instagram.com/yashhhhh_29?utm_source=qr&igsh=YTV2OTRpMzNkOG9l"
         },
     ]
 
