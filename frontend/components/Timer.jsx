@@ -10,7 +10,7 @@ const Timer = () => {
         seconds: 0,
     });
 
-    const targetDate = new Date("2025-04-05T08:00:00").getTime();
+    const targetDate = new Date("2025-04-05T08:30:00").getTime();
 
     useEffect(() => {
         const timer = setInterval(() => {

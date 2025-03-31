@@ -104,7 +104,7 @@ const EventDetails = () => {
                         </div>
                         <div className="flex gap-3 items-center">
                             <FaClock className="text-xl sm:text-2xl text-white" />
-                            <h3 className="text-white text-sm sm:text-lg">10:00 AM onwards</h3>
+                            <h3 className="text-white text-sm sm:text-lg">8:30 AM onwards</h3>
                         </div>
                     </div>
                 </Card>
