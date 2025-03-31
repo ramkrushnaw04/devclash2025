@@ -140,6 +140,14 @@ const DevKraftNav = ({isMain}) => {
                     >
                         Contact
                     </motion.a>
+                    <motion.a
+                        variants={itemVariants}
+                        href="/team"
+                        className="text-[#F16043] hover:text-white py-4 transition-colors text-2xl font-bold tracking-wider uppercase"
+                    >
+                        Team
+                    </motion.a>
+                    
                 </div>
             </motion.div>}
         </div>

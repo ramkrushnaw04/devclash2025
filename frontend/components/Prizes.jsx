@@ -96,7 +96,7 @@ const EventDetails = () => {
 
 
 
-                <Card src='/images/gold-sack.png' title={'UPTO 1 LAKHS'} />
+                <Card src='/images/gold-sack.png' title={'UPTO 75K'} />
                 <Card src='/images/trophy.png' title={'TROPHY'} />
                 <Card src='/images/treasure.png' title={'GOODIES'} />
                 <Card src='/images/internship.png' title={'INTERNSHIP OPPORTUNITIES'} />
