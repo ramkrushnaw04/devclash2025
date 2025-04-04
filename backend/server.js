@@ -7,7 +7,7 @@ const PORT = 3000;
 require('dotenv').config();
 
 app.use(cors({
-    origin: 'https://devclash.dypdpu.edu.in',
+    origin: ['https://devclash.dypdpu.edu.in', 'http://localhost:5173'],
     methods: ['GET'],
 }));
 
