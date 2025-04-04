@@ -3,6 +3,8 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
+require('dotenv').config();
+
 const isAllowed = false
 const problemStatements = [
     {
@@ -39,7 +41,7 @@ app.get('/', (req, res) => {
 
 
 app.get('/get-problems', (req, res) => {
-    if(isAllowed) {
+    if(process.env.IS_ALLOWRD) {
         res.json(problemStatements);
     } else {
         res.json([])
