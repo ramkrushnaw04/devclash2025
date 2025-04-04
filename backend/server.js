@@ -1,11 +1,17 @@
 const express = require('express');
+const cors = require('cors');
 
 const app = express();
 const PORT = 3000;
 
 require('dotenv').config();
 
-const isAllowed = false
+app,use(cors({
+    origin: 'https://devclash.dypdpu.edu.in',
+    methods: ['GET'],
+}));
+
+
 const problemStatements = [
     {
       theme: "FinTech",
