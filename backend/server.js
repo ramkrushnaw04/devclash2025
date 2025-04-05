@@ -1,10 +1,9 @@
 const express = require('express');
 const cors = require('cors');
+require('dotenv').config();
 
 const app = express();
 const PORT = 3000;
-
-require('dotenv').config();
 
 app.use(cors({
     origin: ['https://devclash.dypdpu.edu.in', 'http://localhost:5173'],
@@ -36,20 +35,15 @@ const problemStatements = [
         "description": "Create a telemedicine application connecting patients in underserved regions with healthcare support through AI-powered diagnostics and remote consultations. Technical Requirements: Develop an AI symptom checker with preliminary diagnosis capabilities, build secure patient record management system, implement teleconsultation scheduling and video conferencing, create medication tracking and reminder system, and design health trend visualization tools. Core Deliverables: User authentication with secure health profile, symptom assessment tool with risk factor analysis, medication management with adherence tracking, teleconsultation booking system with calendar integration, health metrics dashboard, and local health resource directory. Success Metrics: Accurate preliminary health assessments, secure and HIPAA-compliant data handling, reliable teleconsultation connection, effective medication adherence tracking, intuitive interface for users of all technical abilities, and practical health insights.",
         "icon": "🏥"
     }
-]
+];
 
 app.get('/', (req, res) => {
-    res.redirect('https://devclash.dypdpu.edu.in/')
+    res.redirect('https://devclash.dypdpu.edu.in/');
 });
-
-
 
 app.get('/get-problems', (req, res) => {
-
-    res.json(problemStatements)
-
+    res.json(problemStatements);
 });
-
 
 app.listen(PORT, () => {
     console.log(`Server running on production`);
