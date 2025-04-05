@@ -1,10 +1,13 @@
 const express = require('express');
 const cors = require('cors');
-
+const path = require('path');
 const app = express();
 const PORT = 3000;
 
 require('dotenv').config();
+const filePath = path.join(__dirname, 'ProblemStatement.docx');
+console.log(filePath);
+
 
 app.use(cors({
     origin: ['https://devclash.dypdpu.edu.in', 'http://localhost:5173'],
@@ -14,30 +17,30 @@ app.use(cors({
 
 const problemStatements = [
     {
-      theme: "FinTech",
-      title: "Financial Inclusion Platform",
-      description: "Design a solution that bridges the gap for unbanked and underbanked populations. Create accessible, user-friendly financial tools that address barriers like limited tech access, financial literacy gaps, and identification requirements. Focus on security, privacy, and scalability while ensuring the product appeals to users with diverse financial knowledge levels.",
-      icon: "💰"
+        "theme": "EduTech",
+        "title": "Adaptive STEM Learning Platform",
+        "description": "Create an AI-powered web or mobile application that revolutionizes STEM education for students in grades 6-12 through personalized learning experiences. Build an intelligent assessment system using machine learning to identify learning gaps, develop adaptive content delivery, implement collaborative learning, and create visualization tools to track progress and mastery of concepts.",
+        "icon": "📚"
     },
     {
-      theme: "EduTech",
-      title: "Personalized Learning Experience",
-      description: "Build an adaptive educational platform that identifies individual learning styles, strengths, and weaknesses to deliver customized content. Incorporate features like progress tracking, interactive exercises, and accessibility options. The solution should work across various devices, including low-bandwidth scenarios, and provide meaningful metrics for both students and educators.",
-      icon: "📚"
+        "theme": "FinTech",
+        "title": "Micro-Entrepreneur Financial Empowerment App",
+        "description": "Develop a mobile app that transforms financial access for micro-entrepreneurs in emerging markets through alternative credit scoring and business intelligence. Create an alternative credit scoring algorithm, build real-time expense tracking, implement predictive cash flow modeling, develop a simplified loan application system, and design interactive financial education modules.",
+        "icon": "💰"
     },
     {
-      theme: "Healthcare",
-      title: "Remote Patient Monitoring System",
-      description: "Develop a comprehensive system for monitoring patients with chronic conditions outside traditional healthcare settings. Integrate data collection from wearables or simple home devices, automated analysis to detect concerning patterns, and appropriate notification systems. Consider privacy regulations, ease of use for elderly patients, and integration with existing healthcare workflows.",
-      icon: "🏥"
+        "theme": "Agriculture",
+        "title": "Smart Farming Intelligence Platform",
+        "description": "Build a data-driven mobile application that helps small-scale farmers optimize crop management and productivity using predictive analytics. Integrate satellite imagery and weather data APIs, implement machine learning for crop health analysis, create resource optimization algorithms, develop a market intelligence system, and build a knowledge-sharing community feature.",
+        "icon": "🌱"
     },
     {
-      theme: "Agriculture",
-      title: "Sustainable Farming Assistant",
-      description: "Create a solution to help small and medium-scale farmers implement sustainable practices that optimize resource usage and crop yields. Focus on areas like precision agriculture, weather prediction, soil health monitoring, or supply chain improvements. The tool should be accessible to farmers with varying levels of technical expertise and adaptable to different agricultural contexts.",
-      icon: "🌱"
+        "theme": "Healthcare",
+        "title": "Community Health Monitoring Platform",
+        "description": "Create a telemedicine application connecting patients in underserved regions with healthcare support through AI-powered diagnostics and remote consultations. Develop an AI symptom checker, build secure patient record management, implement teleconsultation scheduling, create medication tracking, and design health trend visualization tools.",
+        "icon": "🏥"
     }
-  ];
+];
 
 
 app.get('/', (req, res) => {
@@ -47,13 +50,10 @@ app.get('/', (req, res) => {
 
 
 app.get('/get-problems', (req, res) => {
-    if(process.env.IS_ALLOWED) {
-        res.json(problemStatements);
-    } else {
-        res.json([])
-    }
-});
 
+    res.json([])
+
+});
 
 
 app.listen(PORT, () => {
