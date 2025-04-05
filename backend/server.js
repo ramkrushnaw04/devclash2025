@@ -1,13 +1,10 @@
 const express = require('express');
 const cors = require('cors');
-const path = require('path');
+
 const app = express();
 const PORT = 3000;
 
 require('dotenv').config();
-const filePath = path.join(__dirname, 'ProblemStatement.docx');
-console.log(filePath);
-
 
 app.use(cors({
     origin: ['https://devclash.dypdpu.edu.in', 'http://localhost:5173'],
@@ -55,5 +52,5 @@ app.get('/get-problems', (req, res) => {
 
 
 app.listen(PORT, () => {
-    console.log(`Server running on production);
+    console.log(`Server running on production`);
 });
