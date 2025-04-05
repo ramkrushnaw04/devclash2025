@@ -50,11 +50,7 @@ app.get('/', (req, res) => {
 
 
 app.get('/get-problems', (req, res) => {
-    // if(process.env.IS_ALLOWED) {
-    //     res.json(problemStatements);
-    // } else {
-    //     res.json([])
-    // }
+
     res.json([])
 
 });
